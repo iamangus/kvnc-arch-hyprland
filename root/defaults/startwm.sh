@@ -13,4 +13,4 @@ export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 export CLUTTER_BACKEND=wayland
 
-exec systemd-cat --identifier=hyprland /usr/bin/Hyprland $@
+/usr/bin/Hyprland
