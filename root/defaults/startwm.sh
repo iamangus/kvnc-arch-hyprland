@@ -12,5 +12,6 @@ export QT_QPA_PLATFORMTHEME=gtk2
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 export CLUTTER_BACKEND=wayland
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
 
 /usr/bin/Hyprland
