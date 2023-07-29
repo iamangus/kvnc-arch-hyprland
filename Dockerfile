@@ -5,7 +5,7 @@ ENV TZ="America/Chicago"
 # makepkg cannot (and should not) be run as root:
 ARG user=makepkg
 RUN useradd --system --create-home $user \
-  && echo "$user ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers.d/$user
+  && echo "$user ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/$user
 
 RUN pacman -Sy --noconfirm base-devel git vim
 
